@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Cryptography</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="encrypt">
+        <input
+          type="text"
+          name="enc"
+          id="enc"
+          placeholder="enter sentence to encrypt"
+        />
+        <div class="key">
+          <label for="key">Key:</label>
+          <input type="number" name="key" id="key" />
+        </div>
+        <button id="encbtn">Encrypt</button>
+        <div id="encryptionMessage"></div>
+      </div>
+
+      <div class="decrypt">
+        <input
+          type="text"
+          name="dec"
+          id="dec"
+          placeholder="enter sentence to decrypt"
+        />
+        <button id="decbtn">Decrypt</button>
+        <div id="decryptionMessage"></div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

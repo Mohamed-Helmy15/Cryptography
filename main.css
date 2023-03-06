@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  padding: 10px;
+  margin: 20px auto;
+  background-color: #eee;
+  display: flex;
+}
+.container .encrypt,
+.container .decrypt {
+  margin-right: 10px;
+  flex: 1;
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.container .encrypt #enc,
+.container .decrypt #dec {
+  padding: 5px;
+  font-size: 16px;
+}
+.container .encrypt .key #key,
+.container .encrypt #enc,
+.container .decrypt #dec {
+  outline: none;
+  border: 2px solid #eee;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.container .encrypt #encbtn,
+.container .decrypt #decbtn,
+.container .encrypt #encryptionMessage div,
+.container #decryptionMessage div {
+  background-color: #0075ff;
+  border-radius: 8px;
+  padding: 8px;
+  color: white;
+}
+.container .encrypt #encryptionMessage div::selection,
+.container #decryptionMessage div::selection {
+  background-color: #eee;
+  color: black;
+}
+.container .encrypt #encbtn,
+.container .decrypt #decbtn {
+  display: block;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.container .encrypt #encryptionMessage,
+.container #decryptionMessage div {
+  width: 100%;
+  font-size: 19px;
+}
+.container .decrypt #dec {
+}
+.container #decryptionMessage {
+  width: 100%;
+}
+.container #decryptionMessage div {
+  margin-bottom: 10px;
+}
+h3.title {
+    text-align: center;
+}
